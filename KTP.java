@@ -94,12 +94,14 @@ public class KTP {
 		search = search.toLowerCase();
 		text = replaceAll(text, arlist," ");
 		text = replaceAll(text, enlist," ");
+		search = replaceAll(search, arlist," ");
+		search = replaceAll(search, enlist," ");
 		
 		
 		
 		// 7# converting both strings to lists
-		temptext = text+" ";
-		tempsearch = search+" ";
+		temptext = text;
+		tempsearch = search;
 		ArrayList<String> w = new ArrayList();
 		ArrayList<String> s = new ArrayList();
 		w = ConverToList(temptext);
