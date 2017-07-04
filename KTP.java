@@ -144,6 +144,8 @@ public class KTP {
 				String s2 = f2.charAt(i)+"";
 				if(s1.equals(s2)){
 					val = val+num;
+				}else{
+					val = val - num;
 				}
 			}
 		
